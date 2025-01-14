@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Napsukka</title>
+  	<style>
+		body {
+			margin: 0;
+			background: black;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		canvas {
+			display: block;
+		}
+		#startButton {
+			position: absolute;
+			padding: 10px 20px;
+			font-size: 18px;
+			color: white;
+			background: #555;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#startButton:hover {
+			background: #777;
+		}
+	</style>
+</head>
+<body>
+	<button id="startButton">Start</button>
+	<canvas id="ballCanvas"></canvas>
+	<script src="https://unpkg.com/tone"></script>  
+	<script src="app.js"></script>
+</body>
+</html>
